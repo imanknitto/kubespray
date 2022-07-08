@@ -10,9 +10,8 @@
 
 - name: containerd | Remove containerd repository for Debian os family
   apt_repository:
-    repo: "{{ item }}"
+    repo: "{{ containerd_repo_info.repo }}"
     state: absent
-  with_items: "{{ containerd_repo_info.repos }}"
   when: ansible_pkg_mgr == 'apt'
   tags:
     - reset_containerd

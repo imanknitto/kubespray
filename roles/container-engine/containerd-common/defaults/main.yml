@@ -6,7 +6,7 @@ yum_repo_dir: /etc/yum.repos.d
 
 # Keep minimal repo information arround for cleanup
 containerd_repo_info:
-  repos:
+  repo:
 
 # Ubuntu docker-ce repo
 containerd_ubuntu_repo_base_url: "https://download.docker.com/linux/ubuntu"

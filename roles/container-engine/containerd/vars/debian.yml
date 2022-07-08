@@ -1,7 +1,6 @@
 ---
 containerd_repo_info:
-  repos:
-    - >
+  repo: >
       deb {{ containerd_debian_repo_base_url }}
       {{ ansible_distribution_release|lower }}
       {{ containerd_debian_repo_component }}
